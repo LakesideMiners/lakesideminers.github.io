@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Online players</title>
-  <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./style.css" rel="stylesheet">
     <script type="text/javascript">
     func();
     var seconds = 5; /* Your Refresh Rate */
@@ -10,7 +10,7 @@
         func();
     }, seconds * 1000);
     function func(){
-        var ip = "mineslam.me";
+        var ip = "mc.furempire.net";
         var xhr = new XMLHttpRequest();
         xhr.open("GET", "http://minecraft-api.com/v1/get/?server=" + ip, true);
         xhr.onreadystatechange = function() {
